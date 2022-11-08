@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Hypertab</title>
+    <title>New Tab</title>
     <link rel='stylesheet' href='/css/css.css'>
 </head>
 
@@ -26,14 +26,14 @@
     </div>
 
     <div class="center">
-        <h1 id="headtxt">Hypertabs</h1>
+        <h1 id="headtxt">Secureit</h1>
         <!-- <p id="txt">
             TitaniumNetwork is an organization dedicated to <br>providing free access to information by bypassing the
             over-restrictive filters employed by institutions like Schools and Workplaces.</p> -->
         <forum id="input"
             onkeydown="if(event.key == 'Enter'){location.href=`${path}${xor.encode(window.parent.searchEngine+document.getElementById('inputb').value)}`}"
             onsubmit="location.href=`${path}${xor.encode(window.parent.searchEngine+document.getElementById('inputb').value)}`">
-            <input id="inputb" placeholder="Search.....">
+            <input id="inputb" placeholder="Search...">
             <input id="inputimg"
                 onclick="location.href=`${path}${xor.encode(window.parent.searchEngine+document.getElementById('inputb').value)}`"
                 type="image" value="Login" src="/search.svg" height="24" width="24">
@@ -49,16 +49,13 @@
                 <img class="icn" src="/bookmark.png">
                 <a class="btn">Music</a>
             </div>
-            <div onclick="location.href='/c.html'" class="crm">
-                <img class="icn" src="/icon.png">
-                <a class="btn">Contributors</a>
-            </div>
             <div onclick="location.href=path+xor.encode('https://discord.gg/unblock')" class="crm">
                 <img class="icn" src="/dcd.png">
                 <a class="btn">Join Discord</a>
             </div>
         </div>
     </div>
+    <div style="position:absolute; bottom:0; right:0; color:white;"> This was made with the help of HyperTabs</div>
 </body>
 
 </html>
