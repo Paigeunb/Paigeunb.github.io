@@ -183,7 +183,7 @@ function openMenu(...x) {
 }
 function inspect() {
   let firebug = document.createElement("script");
-  firebug.setAttribute("src", "/fbl/firebug-lite-debug.js");
+  firebug.setAttribute("src", "https://Paigeunb.github.io/fbl/firebug-lite-debug.js");
   ACTIVE_DOCUMENT().body.appendChild(firebug)(function () {
     if (
       ACTIVE_WINDOW().firebug.version
@@ -303,7 +303,7 @@ document.querySelector("#urlbar").addEventListener("keydown", (event) => {
     ACTIVE_WINDOW().eval(jsUri);
     if (
       !ACTIVE_DOCUMENT().baseURI.endsWith(
-        location.host + "/internal/newTab/main.php"
+        location.host + "https://paigeunb.github.io/internal/newTab/main.php"
       )
     ) {
       URL_BAR.value = ACTIVE_DOCUMENT().baseURI;
@@ -494,7 +494,7 @@ try {
 ActiveExtensions.active.forEach((ext) => {
   console.log("==== ACTIVE EXTENSION ====\n" + ext);
   let extScript = document.createElement("script");
-  extScript.setAttribute("src", "./js/x/" + ext + ".js");
+  extScript.setAttribute("src", "https://paigeunb.github.io/js/x/" + ext + ".js");
   document.body.appendChild(extScript);
 });
 if (localStorage.getItem("ctPins")) {
